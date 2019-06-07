@@ -1,6 +1,6 @@
 {
   "name": "@spriteful/overlay-control-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "centralized control of overlays' scroll position during entry and exit animations for app-shell",
   "main": "overlay-control-mixin.js",
   "scripts": {
