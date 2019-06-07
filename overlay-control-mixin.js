@@ -346,12 +346,11 @@ export const SpritefulOverlayControlMixin = superClass => {
 	  // instead of forcing user to maually back out off the workflow
 	  // ie. 'continue shopping' circumstance
 	  __resetUnderlays() {
-	  	// reset all overlays back to spriteful-app-shell
-  		// get all symbols besides the one for spriteful-app-shell's header
+	  	// reset all overlays back to app-shell
+  		// get all symbols besides the one for app-shell's header
   		const sequence 				= this._overlayRegistry.sequence;
   		const lastIndex 			= sequence.length - 1;
   		const underlaySymbols = sequence.slice(1, lastIndex);
-  		const newSequence 		= [sequence[0], sequence[lastIndex]];
   		const underlays 			= underlaySymbols.map(symbol => 
   															this.__getItemFromRegistry(symbol));
   		// reset underlays that are between base view and uppermost overlay
@@ -359,7 +358,10 @@ export const SpritefulOverlayControlMixin = superClass => {
   			underlay.panel.reset('controller-reset');
   		});
   		// reset sequence to include only the base view and uppermost overlay symbols
-  		this._overlayRegistry.sequence = newSequence;
+  		if (lastIndex > 0) {
+  			const newSequence = [sequence[0], sequence[lastIndex]];
+  			this._overlayRegistry.sequence = newSequence;
+  		}
 	  }
 
 	};

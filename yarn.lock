@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@spriteful/lambda@^1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@spriteful/lambda/-/lambda-1.3.3.tgz#0a0f553c95da4a392a9d97fb1f5daf4544ef1da9"
-  integrity sha512-q1wIoJtozKSNaMT4DSxqd6gHv3z6sRlTrx+nUnltHLwYRMIS/zuzaPgktQ0e2PARQnZ2MG8jTDXcOnjvHKYK1A==
+"@spriteful/lambda@^1.3.5":
+  version "1.3.9"
+  resolved "https://registry.yarnpkg.com/@spriteful/lambda/-/lambda-1.3.9.tgz#c9d82ab82e4b9a99897bff5b5e219c3fcca1699d"
+  integrity sha512-14gisc0Ng7u/9TZD8+aX76/uedau9CRpjK47C5XEtZm4tmDR/kvaJ7FS9tl9OP4BAwmqwfULNPFhoEVLRIXOew==
 
-"@spriteful/utils@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@spriteful/utils/-/utils-1.1.6.tgz#70135093c92fdc88235655f8857262070a13abb7"
-  integrity sha512-MlyhtqE1r30GcNkbwI2A8+CGlZ94nrFVfKzOma9ygP/J77R0rV67A42WMvmLpaXReQ2Z7IwQiN74IPBFkN3CFw==
+"@spriteful/utils@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@spriteful/utils/-/utils-1.2.4.tgz#2ceec5fb1ccac2d4253ba02da6ec676c205b9127"
+  integrity sha512-bN3CgHLcv9Dbvw3jTCsUQOKb4agl1y4sLky5NpyVSg93sQpMCbZ7DkBYJ1EcOgkEJaCNV/p79J84OFRjzru9HA==
   dependencies:
-    "@spriteful/lambda" "^1.3.3"
+    "@spriteful/lambda" "^1.3.5"
